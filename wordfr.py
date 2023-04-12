@@ -6,8 +6,10 @@ import sys
 #myfreqs = freqs()
 
 for line in sys.stdin:
-   lline = line.lower().replace(',','')
-   lline = lline.replace('.','')
+   lline = line.lower().replace(',','') #replace commas
+   lline = lline.replace('.','') #replace full stops
+   lline = lline.replace('"','') #replace quotes
+   lline = lline.replace('“','') #replace stylish quotes
    lline = lline.replace('!','')
    lline = lline.replace('?','')
    lline = lline.replace("'s",'')
